@@ -527,11 +527,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\QB\\QB\\QB_School_Clinic\\QBWebApp\\QBWebApp.csproj",
+      "projectUniqueName": "E:\\QB\\QB_School_Clinic\\QBWebApp\\QBWebApp.csproj",
       "projectName": "QBWebApp",
-      "projectPath": "E:\\QB\\QB\\QB_School_Clinic\\QBWebApp\\QBWebApp.csproj",
+      "projectPath": "E:\\QB\\QB_School_Clinic\\QBWebApp\\QBWebApp.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "E:\\QB\\QB\\QB_School_Clinic\\QBWebApp\\obj\\",
+      "outputPath": "E:\\QB\\QB_School_Clinic\\QBWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -554,8 +554,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\QB\\QB\\QB_School_Clinic\\QBLib\\QBLib.csproj": {
-              "projectPath": "E:\\QB\\QB\\QB_School_Clinic\\QBLib\\QBLib.csproj"
+            "E:\\QB\\QB_School_Clinic\\QBLib\\QBLib.csproj": {
+              "projectPath": "E:\\QB\\QB_School_Clinic\\QBLib\\QBLib.csproj"
             }
           }
         }

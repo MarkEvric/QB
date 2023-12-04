@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\QB\\QB\\QB_School_Clinic\\QBLib\\QBLib.csproj",
+      "projectUniqueName": "E:\\QB\\QB_School_Clinic\\QBLib\\QBLib.csproj",
       "projectName": "QBLib",
-      "projectPath": "E:\\QB\\QB\\QB_School_Clinic\\QBLib\\QBLib.csproj",
+      "projectPath": "E:\\QB\\QB_School_Clinic\\QBLib\\QBLib.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "E:\\QB\\QB\\QB_School_Clinic\\QBLib\\obj\\",
+      "outputPath": "E:\\QB\\QB_School_Clinic\\QBLib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

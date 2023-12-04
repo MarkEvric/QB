@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PwJuF9JRagUZoRNRB/lzvqUnEXU3OjnsmLnogiuYWAkSJ0cp4btjw8a3HOxOwS29i4foIPkLIiPnULV099KjUA==",
+  "dgSpecHash": "u1vuijDwTvMknX9OiTZ8wsBlSSn9b45PXe+GYu/DIF+ztnYJ5Uwk1gmBRUJhQGWLXK0nKj50/UiLGoDz+mAxAQ==",
   "success": true,
-  "projectFilePath": "E:\\QB\\QB\\QB_School_Clinic\\QBWebApp\\QBWebApp.csproj",
+  "projectFilePath": "E:\\QB\\QB_School_Clinic\\QBWebApp\\QBWebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\dapper\\2.1.24\\dapper.2.1.24.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
