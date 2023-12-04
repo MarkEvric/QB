@@ -9,37 +9,37 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QBWebApp
 build_property.RootNamespace = QBWebApp
-build_property.ProjectDir = E:\QB\QB_School_Clinic\QBWebApp\
+build_property.ProjectDir = D:\Code\QB\QB_School_Clinic\QBWebApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\QB\QB_School_Clinic\QBWebApp
+build_property.MSBuildProjectDirectory = D:\Code\QB\QB_School_Clinic\QBWebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/QB/QB_School_Clinic/QBWebApp/Pages/Error.cshtml]
+[D:/Code/QB/QB_School_Clinic/QBWebApp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/QB/QB_School_Clinic/QBWebApp/Pages/QBIndex.cshtml]
+[D:/Code/QB/QB_School_Clinic/QBWebApp/Pages/QBIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUJJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/QB/QB_School_Clinic/QBWebApp/Pages/QBLogbook.cshtml]
+[D:/Code/QB/QB_School_Clinic/QBWebApp/Pages/QBLogbook.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUJMb2dib29rLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/QB/QB_School_Clinic/QBWebApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Code/QB/QB_School_Clinic/QBWebApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/QB/QB_School_Clinic/QBWebApp/Pages/_ViewImports.cshtml]
+[D:/Code/QB/QB_School_Clinic/QBWebApp/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/QB/QB_School_Clinic/QBWebApp/Pages/_ViewStart.cshtml]
+[D:/Code/QB/QB_School_Clinic/QBWebApp/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/QB/QB_School_Clinic/QBWebApp/Pages/Shared/_Layout.cshtml]
+[D:/Code/QB/QB_School_Clinic/QBWebApp/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xu59kmues9

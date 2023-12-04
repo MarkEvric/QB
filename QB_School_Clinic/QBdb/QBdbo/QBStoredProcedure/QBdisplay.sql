@@ -6,15 +6,15 @@ BEGIN
 	INSERT INTO[dbo].[QBTable]
 (QBName,QBGradeYearLevel,QBReasonForAdmission,QBDate,QBTime)
 VALUES(N'Mark Evric Quinones',
-       N'BSIT-3A',
-       N'Lovesick',
-       N'Araw-araw',
-       N'Tuwing Wala Sya'),
+       N'BSIT-3',
+       N'HIV',
+       N'12-4-2023',
+       N'12:59 AM'),
        (N'Christene Joy Burata',
-       N'BSIT-3A',
-       N'Broken',
-       N'Gabi-gabi',
-       N'24 Hours')
+       N'BSIT-3',
+       N'kalibanga',
+       N'12-4-2023',
+       N'8:00 AM')
 END
 
 SELECT

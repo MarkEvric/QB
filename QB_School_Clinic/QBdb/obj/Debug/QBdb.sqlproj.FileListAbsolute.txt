@@ -8,3 +8,9 @@ E:\QB\QBSchoolClinicLogbook\QBdb\obj\Debug\postdeploy.sql
 E:\QB\QBSchoolClinicLogbook\QBdb\obj\Debug\predeploy.sql
 E:\QB\QBSchoolClinicLogbook\QBdb\obj\Debug\QBdb.dll
 E:\QB\QBSchoolClinicLogbook\QBdb\obj\Debug\QBdb.pdb
+D:\Code\QB\QB_School_Clinic\QBdb\bin\Debug\QBdb.dacpac
+D:\Code\QB\QB_School_Clinic\QBdb\bin\Debug\QBdb.dll
+D:\Code\QB\QB_School_Clinic\QBdb\bin\Debug\QBdb.pdb
+D:\Code\QB\QB_School_Clinic\QBdb\obj\Debug\QBdb.sqlproj.AssemblyReference.cache
+D:\Code\QB\QB_School_Clinic\QBdb\obj\Debug\QBdb.dll
+D:\Code\QB\QB_School_Clinic\QBdb\obj\Debug\QBdb.pdb

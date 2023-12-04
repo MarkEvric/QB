@@ -22,3 +22,14 @@ E:\QB\QB_School_Clinic\QBLib\obj\Debug\net6.0\QBLib.dll
 E:\QB\QB_School_Clinic\QBLib\obj\Debug\net6.0\refint\QBLib.dll
 E:\QB\QB_School_Clinic\QBLib\obj\Debug\net6.0\QBLib.pdb
 E:\QB\QB_School_Clinic\QBLib\obj\Debug\net6.0\ref\QBLib.dll
+D:\Code\QB\QB_School_Clinic\QBLib\bin\Debug\net6.0\QBLib.deps.json
+D:\Code\QB\QB_School_Clinic\QBLib\bin\Debug\net6.0\QBLib.dll
+D:\Code\QB\QB_School_Clinic\QBLib\bin\Debug\net6.0\QBLib.pdb
+D:\Code\QB\QB_School_Clinic\QBLib\obj\Debug\net6.0\QBLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\QB\QB_School_Clinic\QBLib\obj\Debug\net6.0\QBLib.AssemblyInfoInputs.cache
+D:\Code\QB\QB_School_Clinic\QBLib\obj\Debug\net6.0\QBLib.AssemblyInfo.cs
+D:\Code\QB\QB_School_Clinic\QBLib\obj\Debug\net6.0\QBLib.csproj.CoreCompileInputs.cache
+D:\Code\QB\QB_School_Clinic\QBLib\obj\Debug\net6.0\QBLib.dll
+D:\Code\QB\QB_School_Clinic\QBLib\obj\Debug\net6.0\refint\QBLib.dll
+D:\Code\QB\QB_School_Clinic\QBLib\obj\Debug\net6.0\QBLib.pdb
+D:\Code\QB\QB_School_Clinic\QBLib\obj\Debug\net6.0\ref\QBLib.dll
