@@ -1,0 +1,7 @@
+﻿CREATE PROCEDURE [dbo].[QBdelete]
+    @QBId INT
+AS
+BEGIN
+DELETE FROM[dbo].[QBTable] WHERE [QBId]=@QBId
+
+END

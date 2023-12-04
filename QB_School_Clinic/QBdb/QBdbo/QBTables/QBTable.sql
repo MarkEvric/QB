@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[QBTable]
+(
+	[QBId] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [QBName] NVARCHAR(50) NULL, 
+    [QBGradeYearLevel] NVARCHAR(50) NULL, 
+    [QBReasonForAdmission] NVARCHAR(50) NULL, 
+    [QBDate] NVARCHAR(50) NULL, 
+    [QBTime] NVARCHAR(50) NULL
+)

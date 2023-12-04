@@ -1,0 +1,99 @@
+﻿@page
+@model QBWebApp.Pages.QBLogbookModel
+<a class="btn btn-dark" asp-page="/QBIndex">LogOut</a>
+
+<form method="post" asp-page-handler="QBsearch">
+    <input name="Search" />
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+<h1>STUDENT CLINIC LOGBOOK</h1>
+<div style="max-height: 300px; overflow-y: auto;">
+    <table class="table bg-info text-dark">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Grade/Year Level</th>
+                <th>Reason For Adminssion</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <form method="post" asp-page-handler="QBcreate">
+            <tr>
+                <input hidden name="QBId" value="@Model.QBId" />
+
+                <td>
+                    <div class="dropdown">
+                        <input placeholder="Name" name="QBName" value="@Model.QBName" />
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                        <ul class="dropdown-menu" style="max-height: 200px; overflow-y: auto;">
+                                @foreach (var a in Model.QBlist)
+                                {
+                                <li>
+                                    <input type="submit" value="@a.QBName" name="QBName2" formmethod="post" asp-page-handler="QBedit" />
+                                </li>
+                                }
+                        </ul>
+                    </div>
+                </td>
+                <td><input value="@Model.QBGradeYearLevel" name="QBGradeYearLevel" placeholder="Grade/Year Level" /></td>
+                <td><input value="@Model.QBReasonForAdmission" name="QBReasonForAdmission" placeholder="Reason For Adminssion" /></td>
+                <td><input value="@Model.QBDate" type="date" name="QBDate" placeholder="Date" /></td>
+                <td><input value="@Model.QBTime" type="time" name="QBTime" placeholder="Time" />
+                    <button type="submit" class="btn btn-primary">Add</button>
+                    <button class="btn btn-primary" type="submit" formmethod="post" asp-page-handler="QBupdate">Update</button>
+                </td>
+            </tr>
+            </form>
+            @foreach (var a in Model.QBlist)
+            {
+                <tr>
+                    <td>@a.QBName</td>
+                    <td>@a.QBGradeYearLevel</td>
+                    <td>@a.QBReasonForAdmission</td>
+                    <td>@a.QBDate</td>
+                    <td>@a.QBTime</td>
+                    <td>
+                        <form method="post" asp-page-handler="QBedit">
+                            <input hidden value="@a.QBId" name="QBId" />
+                            <input hidden value="@a.QBId" name="QBId2" />
+                            <input hidden value="@a.QBName" name="QBName2" />
+                            <input hidden value="@a.QBGradeYearLevel" name="QBGradeYearLevel2" />
+                            <input hidden value="@a.QBReasonForAdmission" name="QBReasonForAdmission2" />
+                            <input hidden value="@a.QBDate" name="QBDate2" />
+                            <input hidden value="@a.QBTime" name="QBTime2" />
+                            <button type="submit" class="btn btn-primary">Edit</button>
+                            <button class="btn btn-dark" type="submit" formmethod="post" asp-page-handler="QBdelete">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<h1>Custom Time/Date</h1>
+<form method="post" asp-page-handler="QBcreate">
+    <input hidden name="QBId" value="@Model.QBId" />
+
+    <div class="dropdown">
+        <input placeholder="Name" name="QBName" value="@Model.QBName" />
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+        <ul class="dropdown-menu">
+            @foreach (var a in Model.QBlist)
+            {
+                <li>
+                    <input type="submit" value="@a.QBName" name="QBName2" formmethod="post" asp-page-handler="QBedit" />
+                </li>
+            }
+        </ul>
+        <input placeholder="Grade/Year Level" name="QBGradeYearLevel" value="@Model.QBGradeYearLevel" />
+        <input placeholder="Reason For Adminssion" name="QBReasonForAdmission" value="@Model.QBReasonForAdmission" />
+        <input placeholder="Date" name="QBDate" value="@Model.QBDate" />
+        <input placeholder="Time" name="QBTime" value="@Model.QBTime" />
+        <button type="submit" class="btn btn-primary">Add</button>
+        <button class="btn btn-primary" type="submit" formmethod="post" asp-page-handler="QBupdate">Update</button>
+        <button class="btn btn-dark" type="submit" formmethod="post" asp-page-handler="QBdelete">Delete</button>
+    </div>
+
+</form>

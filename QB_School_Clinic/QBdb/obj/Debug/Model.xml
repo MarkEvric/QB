@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSchemaModel FileFormatVersion="1.2" SchemaVersion="2.9" DspName="Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider" CollationLcid="1033" CollationCaseSensitive="False" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+	<Header>
+		<CustomData Category="AnsiNulls">
+			<Metadata Name="AnsiNulls" Value="True" />
+		</CustomData>
+		<CustomData Category="QuotedIdentifier">
+			<Metadata Name="QuotedIdentifier" Value="True" />
+		</CustomData>
+		<CustomData Category="CompatibilityMode">
+			<Metadata Name="CompatibilityMode" Value="150" />
+		</CustomData>
+		<CustomData Category="Reference" Type="Assembly">
+			<Metadata Name="LogicalName" Value="QBdb.dll" />
+			<Metadata Name="FileName" Value="E:\QB\QBSCHOOLCLINICLOGBOOK\QBDB\OBJ\DEBUG\QBDB.DLL" />
+			<Metadata Name="AssemblyName" Value="QBdb" />
+			<Metadata Name="PermissionSet" Value="SAFE" />
+			<Metadata Name="Owner" Value="" />
+			<Metadata Name="GenerateSqlClrDdl" Value="True" />
+			<Metadata Name="IsVisible" Value="True" />
+			<Metadata Name="IsModelAware" Value="True" />
+			<Metadata Name="SkipCreationIfEmpty" Value="True" />
+			<Metadata Name="AssemblySymbolsName" Value="E:\QB\QBSchoolClinicLogbook\QBdb\obj\Debug\QBdb.pdb" />
+		</CustomData>
+		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
+	</Header>
+	<Model>
+		<Element Type="SqlDatabaseOptions">
+			<Property Name="Collation" Value="SQL_Latin1_General_CP1_CI_AS" />
+			<Property Name="IsAnsiNullDefaultOn" Value="True" />
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="IsAnsiWarningsOn" Value="True" />
+			<Property Name="IsArithAbortOn" Value="True" />
+			<Property Name="IsConcatNullYieldsNullOn" Value="True" />
+			<Property Name="IsTornPageProtectionOn" Value="False" />
+			<Property Name="IsFullTextEnabled" Value="True" />
+			<Property Name="PageVerifyMode" Value="3" />
+			<Property Name="DefaultLanguage" Value="" />
+			<Property Name="DefaultFullTextLanguage" Value="" />
+			<Property Name="QueryStoreStaleQueryThreshold" Value="367" />
+			<Relationship Name="DefaultFilegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[QBTable].[QBId]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[QBTable]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="3" />
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[QBcreate]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+INSERT INTO[dbo].[QBTable]
+(QBName,QBGradeYearLevel,QBReasonForAdmission,QBDate,QBTime)
+VALUES(@QBName,
+       @QBGradeYearLevel,
+       @QBReasonForAdmission,
+       @QBDate,
+       @QBTime)
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[QBTable]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBGradeYearLevel]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBReasonForAdmission]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBcreate].[@QBName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBcreate].[@QBGradeYearLevel]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBcreate].[@QBReasonForAdmission]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBcreate].[@QBDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBcreate].[@QBTime]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[QBcreate].[@QBName]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[QBcreate].[@QBGradeYearLevel]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[QBcreate].[@QBReasonForAdmission]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[QBcreate].[@QBDate]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[QBcreate].[@QBTime]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="410" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[QBcreate]&#xD;&#xA;    @QBName NVARCHAR(50), &#xD;&#xA;    @QBGradeYearLevel NVARCHAR(50), &#xD;&#xA;    @QBReasonForAdmission NVARCHAR(50), &#xD;&#xA;    @QBDate NVARCHAR(50), &#xD;&#xA;    @QBTime NVARCHAR(50)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[QBdelete]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+DELETE FROM[dbo].[QBTable] WHERE [QBId]=@QBId
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[QBTable]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBdelete].[@QBId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[QBdelete].[@QBId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="113" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[QBdelete]&#xD;&#xA;    @QBId INT&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[QBdisplay]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+IF(SELECT COUNT(*)FROM[dbo].[QBTable])=0
+BEGIN
+	INSERT INTO[dbo].[QBTable]
+(QBName,QBGradeYearLevel,QBReasonForAdmission,QBDate,QBTime)
+VALUES(N'Mark Evric Quinones',
+       N'BSIT-3A',
+       N'Lovesick',
+       N'Araw-araw',
+       N'Tuwing Wala Sya'),
+       (N'Christene Joy Burata',
+       N'BSIT-3A',
+       N'Broken',
+       N'Gabi-gabi',
+       N'24 Hours')
+END
+
+SELECT
+[QBId] as QBId,
+[QBName] as QBName,
+[QBGradeYearLevel] as QBGradeYearLevel,
+[QBReasonForAdmission] as QBReasonForAdmission,
+[QBDate] as QBDate,
+[QBTime] as QBTime
+
+FROM[dbo].[QBTable]
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[QBTable]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBGradeYearLevel]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBReasonForAdmission]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="639" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[QBdisplay]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[QBsearch]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+SELECT
+[QBId] as QBId,
+[QBName] as QBName,
+[QBGradeYearLevel] as QBGradeYearLevel,
+[QBReasonForAdmission] as QBReasonForAdmission,
+[QBDate] as QBDate,
+[QBTime] as QBTime
+
+FROM[dbo].[QBTable]WHERE
+[QBId] like @QBkeyword or
+[QBName] like @QBkeyword or
+[QBGradeYearLevel] like @QBkeyword or
+[QBReasonForAdmission] like @QBkeyword or
+[QBDate] like @QBkeyword or
+[QBTime] like @QBkeyword 
+ORDER BY [QBName]
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[QBTable]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBGradeYearLevel]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBReasonForAdmission]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBsearch].[@QBkeyword]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[QBsearch].[@QBkeyword]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="493" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[QBsearch]&#xD;&#xA;&#x9;@QBkeyword NVARCHAR(50)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[QBTable]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[QBTable].[QBId]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="3" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[QBTable].[QBName]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[QBTable].[QBGradeYearLevel]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[QBTable].[QBReasonForAdmission]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[QBTable].[QBDate]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[QBTable].[QBTime]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[QBupdate]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+UPDATE[dbo].[QBTable]
+set
+[QBName]=coalesce(@QBName,[QBName]),
+[QBGradeYearLevel]=coalesce(@QBGradeYearLevel,[QBGradeYearLevel]),
+[QBReasonForAdmission]=coalesce(@QBReasonForAdmission,[QBReasonForAdmission]),
+[QBDate]=coalesce(@QBDate,[QBDate]),
+[QBTime]=coalesce(@QBTime,[QBTime])
+WHERE [QBId]=@QBId
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[QBTable]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBupdate].[@QBName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBGradeYearLevel]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBupdate].[@QBGradeYearLevel]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBReasonForAdmission]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBupdate].[@QBReasonForAdmission]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBupdate].[@QBDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBupdate].[@QBTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBTable].[QBId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[QBupdate].[@QBId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[QBupdate].[@QBId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[QBupdate].[@QBName]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[QBupdate].[@QBGradeYearLevel]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[QBupdate].[@QBReasonForAdmission]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[QBupdate].[@QBDate]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[QBupdate].[@QBTime]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="536" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[QBupdate]&#xD;&#xA;    @QBId INT,&#xD;&#xA;    @QBName NVARCHAR(50), &#xD;&#xA;    @QBGradeYearLevel NVARCHAR(50), &#xD;&#xA;    @QBReasonForAdmission NVARCHAR(50), &#xD;&#xA;    @QBDate NVARCHAR(50), &#xD;&#xA;    @QBTime NVARCHAR(50)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+	</Model>
+</DataSchemaModel>

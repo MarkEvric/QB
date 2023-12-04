@@ -1,0 +1,10 @@
+E:\QB\QBSchoolClinicLogbook\QBdb\bin\Debug\QBdb.dacpac
+E:\QB\QBSchoolClinicLogbook\QBdb\bin\Debug\QBdb.dll
+E:\QB\QBSchoolClinicLogbook\QBdb\bin\Debug\QBdb.pdb
+E:\QB\QBSchoolClinicLogbook\QBdb\obj\Debug\QBdb.sqlproj.AssemblyReference.cache
+E:\QB\QBSchoolClinicLogbook\QBdb\obj\Debug\Model.xml
+E:\QB\QBSchoolClinicLogbook\QBdb\obj\Debug\refactor.xml
+E:\QB\QBSchoolClinicLogbook\QBdb\obj\Debug\postdeploy.sql
+E:\QB\QBSchoolClinicLogbook\QBdb\obj\Debug\predeploy.sql
+E:\QB\QBSchoolClinicLogbook\QBdb\obj\Debug\QBdb.dll
+E:\QB\QBSchoolClinicLogbook\QBdb\obj\Debug\QBdb.pdb
